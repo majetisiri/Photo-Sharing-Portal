@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	console.log($('.like'));
 	$('.like').click(function(){
-		// console.log($(this).attr('id'));
+		console.log($(this).attr('id'));
 		var id=$(this).attr('id');
 		var _this =$(this);
 		$.post("likes.php", {'pid': id,'user_id':uid},function(response){
@@ -9,7 +9,7 @@ $(document).ready(function() {
 		});
 		var noOfLikes= $(_this).prev().text();
 			
-		// console.log($(this).text());
+		console.log($(this).text());
 
 		if($(this).text().trim()=='Like'){
 			$(this).text('Unlike') ;
