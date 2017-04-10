@@ -1,12 +1,16 @@
+<!-- 
+	/*
+	 * For creating the connection with the MySQL database.
+	 *
+	*/
+ -->
+ 
 <?php 
-echo '<link rel="stylesheet" href="./css/bootstrap.min.css">
-<script src="./js/jquery.js"></script>
-';
 
 $servername="localhost";
 $username="root";
 $password="siri";
-$dbname="siri_db";
+$dbname="photo_sharing";
 
 	
 // Create connection
