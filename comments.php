@@ -12,15 +12,12 @@
 
 <?php
 
-include 'config.php';
-// include 'database/QueryBuilder.php';
+include 'database/QueryBuilder.php';
 
 $comment =$_POST['comment'];
 $pid= $_POST['pid'];
 $uid= $_POST['user_id'];
 
-echo $comment, $pid, $uid;
 
-$sql ="INSERT INTO commentTable (comment, pid, uid) VALUES ('$comment','$pid','$uid')";
-$result= $conn->query($sql);
+QueryBuilder:: insertComments($conn, $comment, $pid, $uid);
 ?>

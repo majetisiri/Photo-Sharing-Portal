@@ -12,7 +12,7 @@ $(document).ready(function() {
 				noOfLikes = 0;
 			}
 
-			if($(_this).text().trim()=='Like'){
+			if($(_this).html()=='Like'){
 					$(_this).text('Unlike') ;
 					noOfLikes = parseInt(noOfLikes)+1; 
 				}
@@ -67,6 +67,8 @@ $(document).ready(function() {
 		},'json');
 	}
 
+	 
+
 	$('.comment').click(function(){
 		$(this).siblings('.comment_box').html('<br/><textarea style="margin-bottom:8px;" name="comment" class="textarea form-control" placeholder="Type here"></textarea>');
 	});
@@ -88,7 +90,7 @@ $(document).ready(function() {
 		var id = $(this).attr('id');
 		var _this = this;
 		$.post('delete_post.php', {delete_id: id}, function(response){
-			$(_this).remove();
+			$(_this).parents('.post').remove();
 		});
 	});
 

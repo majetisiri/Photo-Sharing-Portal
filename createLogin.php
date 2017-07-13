@@ -10,8 +10,7 @@
 
 <?php
 
-
-include "config.php";
+include 'database/QueryBuilder.php';
 include "resources.php";
 
 session_start();
@@ -45,19 +44,14 @@ if (isset($_POST['submit'])) {
 	if($flag ===0) {
 		$password= md5($_POST["password"]);
 	
-		$sql = "SELECT email FROM users WHERE email='$emailID'";
-		$result= $conn->query($sql);
+		$result= QueryBuilder:: selectEmailID($conn,$uid,$emailID);
 		if($result->num_rows==0){
-			$sql = "INSERT INTO users (user_name, email, password) VALUES ('$name', '$emailID',  '$password')";
-
-			if ($conn->query($sql) === TRUE) {
 			
-			    echo "New record created successfully";
-
-				$sql= "SELECT id FROM users WHERE email ='$emailID' and password='$password'";
-				$result = $conn-> query($sql);
+			$result= QueryBuilder:: insertNewUserCredentials($conn,$name,$emailID,$password);
+			if ($result == True) {
+				$result= QueryBuilder::selectUserDetailsForLogin($conn,$emailID,$password);
 				$_SESSION['id'] = $result->fetch_assoc()['id'];
-				header('Location:page.php');
+				header('Location:newUser.php');
 
 			} else {
 			    echo "Error: " . $sql . "<br>" . $conn->error;
@@ -72,23 +66,6 @@ if (isset($_POST['submit'])) {
 
 
 ?>
-
-<style>
- 	#loginBackground{
-		position: fixed;
-	    top: 0;
-	    z-index: -1000;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background-image: url('http://belindashi.com/wp-content/uploads/2013/12/G+-Collage-21_2x11_9-15.jpg');
-	    background-repeat: no-repeat;
-	    background-attachment: fixed;
-	    background-size: 100%;
-	    opacity: 0.7;
-	    filter:alpha(opacity=40);
-	}
-</style>
 
 <html>
 	<body>

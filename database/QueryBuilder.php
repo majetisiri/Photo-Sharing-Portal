@@ -1,7 +1,44 @@
 <?php
 include "config.php";
+
 class QueryBuilder{
 	// write a cnstructor which calls the function connectiondb in functions.php
+	public function selectEmailID($conn,$uid,$emailID){
+		$sql = "SELECT email FROM users WHERE email='$emailID'";
+		$result= $conn->query($sql);
+		return $result;
+	}
+
+	public function insertNewUserCredentials($conn,$name,$emailID,$password){
+		$sql = "INSERT INTO users (user_name, email, password) VALUES ('$name', '$emailID',  '$password')";
+		$result= $conn->query($sql);
+		return $result;
+	}
+	
+	public function insertUserDetails($conn, $fname, $lname, $sex, $phone,$birthday,$age,$uid){
+		$result= QueryBuilder::getUserDetails($conn,$uid);
+		if($result->num_rows>0){
+			$sql= "UPDATE userDetails SET first_name='$fname',last_name='$lname',age='$age',sex='$sex',phone='$phone',birthday='$birthday',uid='$uid' WHERE uid='$uid'";
+			$result= $conn->query($sql);
+		}
+		else{
+			$sql = "INSERT INTO userDetails (first_name, last_name,sex,phone,birthday,age,uid) VALUES ('$fname', '$lname', '$sex', '$phone','$birthday','$age','$uid')";
+			$result= $conn->query($sql);
+		}
+		
+	}
+
+	public function getUserDetails($conn,$uid){
+		$sql="SELECT * FROM userDetails WHERE uid='$uid'";
+		$result= $conn->query($sql);
+		return $result;
+	}
+
+	public function selectUserDetailsForLogin($conn,$emailID,$password){
+		$sql= "SELECT id FROM users WHERE email ='$emailID' and password='$password'";
+		$result = $conn-> query($sql);
+		return $result;
+	}
 
 
 	public function getUsername($uid){
@@ -65,7 +102,7 @@ class QueryBuilder{
 
 	}
 
-	public function insertComments($comment, $pid, $uid){
+	public function insertComments($conn,$comment, $pid, $uid){
 		$sql ="INSERT INTO commentTable (comment, pid, uid) VALUES ('$comment','$pid','$uid')";
 		$result= $conn->query($sql);
 	}
@@ -95,7 +132,7 @@ class QueryBuilder{
 		return $result;
 	}
 
-	public function selectAllPostsOfUser($uid){
+	public function selectAllPostsOfUser($conn,$uid){
 		$sql = "SELECT post,id,pid,image_name,user_name 
 				FROM postTable 
 				JOIN users 

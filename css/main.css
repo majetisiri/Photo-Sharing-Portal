@@ -107,3 +107,59 @@
 				width: 100%;
 			}
 
+
+/* background image for main page*/
+ 	#loginBackground{
+		position: fixed;
+	    top: 0;
+	    z-index: -1000;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-image: url('http://belindashi.com/wp-content/uploads/2013/12/G+-Collage-21_2x11_9-15.jpg');
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: 100%;
+	    opacity: 0.7;
+	    filter:alpha(opacity=40);
+	}
+
+/* hr line with scissors*/
+hr.style16 { 
+  border-top: 1px dashed #8c8b8b; 
+} 
+hr.style16:after { 
+  content: '\002702'; 
+  display: inline-block; 
+  position: relative; 
+  top: -12px; 
+  left: 40px; 
+  padding: 0 3px; 
+  background: #f0f0f0; 
+  color: #8c8b8b; 
+  font-size: 18px; 
+}
+
+/* nav bar in settings*/
+.scrollBarBackground{
+	border-color: #101010;
+	background-color: #333;
+	height: 670px;
+}
+
+.scrollBarText{
+	color: #9d9d9d ;
+	padding-bottom:5px;
+	padding-top:10px;
+	font-size: 16px;
+	list-style-type:none;
+}
+
+.scrollActive{
+	font-weight: bold;
+	color: #fff;
+}
+
+tab{
+	padding-left: 1em;
+}

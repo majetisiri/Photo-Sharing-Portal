@@ -11,8 +11,8 @@
 <?php
 
 	include 'config.php';
-	include 'navHeader.php';
 	include 'resources.php';
+	include 'navHeader.php';
 	
 	
 	session_start();
@@ -65,7 +65,7 @@
 				}
 				else if (($result->fetch_assoc()['request_status']) === '2'){
 					echo '<div style="font-size:25px" class="col-md-5 col-md-offset-3" >'.$json_username[$i].
-							'</br><p> You are now friends</p>
+							'</br><p class="help-block"> You are now friends</p>
 						</div></br>';	
 				}
 			}
