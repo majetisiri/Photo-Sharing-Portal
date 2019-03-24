@@ -19,16 +19,16 @@ The goal of this app is to provide a complete, end-to-end example of a real-worl
 
 Application Screenshots:
 
-- Login Page [Desktop](Uploads/2.jpg)
-- Registration Page [Desktop](Uploads/1.jpg)
-- New User Welcome Page [Desktop](Uploads/1.jpg)
-- Find Friends Page [Desktop](Uploads/1.jpg)
-- Friend Requests Page [Desktop](Uploads/1.jpg)
-- My Profile Page [Desktop](Uploads/1.jpg)
-- Home Page  [Desktop](Uploads/1.jpg)
-- Settings / Edit Profile  [Desktop](Uploads/1.jpg)
-- Settings / Update Password  [Desktop](Uploads/1.jpg)
-- Settings / Upload Profile Pic  [Desktop](Uploads/1.jpg)
+- Login Page [Desktop](uploads/2.jpg)
+- Registration Page [Desktop](uploads/1.jpg)
+- New User Welcome Page [Desktop](uploads/1.jpg)
+- Find Friends Page [Desktop](uploads/1.jpg)
+- Friend Requests Page [Desktop](uploads/1.jpg)
+- My Profile Page [Desktop](uploads/1.jpg)
+- Home Page  [Desktop](uploads/1.jpg)
+- Settings / Edit Profile  [Desktop](uploads/1.jpg)
+- Settings / Update Password  [Desktop](uploads/1.jpg)
+- Settings / Upload Profile Pic  [Desktop](uploads/1.jpg)
 
 ## Website features
 
