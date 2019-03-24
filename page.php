@@ -24,9 +24,9 @@ if(isset($_POST["post_data"]) && isset($_FILES['fileToUpload'])){
 
 
 
-commentsModal($postErr);
 postModal($postErr);
 seamlessResponsive($conn,$uid);
+commentsModal($conn);
 
 echo '
 <script type="text/javascript">

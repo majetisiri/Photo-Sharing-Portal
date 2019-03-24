@@ -9,6 +9,12 @@ class QueryBuilder{
 		return $result;
 	}
 
+	public function insertProfilePic($conn,$file_new_name, $uid){
+		$sql = "INSERT INTO userDetails (profile_pic) VALUES ('$file_new_name') WHERE uid='$uid'";
+		$result= $conn->query($sql);
+		return $result;
+	}
+
 	public function insertNewUserCredentials($conn,$name,$emailID,$password){
 		$sql = "INSERT INTO users (user_name, email, password) VALUES ('$name', '$emailID',  '$password')";
 		$result= $conn->query($sql);
@@ -107,8 +113,17 @@ class QueryBuilder{
 		$result= $conn->query($sql);
 	}
 
-	public function getComment($pid){
+	public function getComment($conn,$pid){
 		$sql = "SELECT comment from commentTable where pid='$pid'";
+ 		$result= $conn->query($sql);
+ 		return $result;
+	}
+
+	public function getCommentDetails($conn,$pid){
+		$sql = "SELECT comment,first_name, last_name,commentTable.created_at from commentTable
+				JOIN userDetails
+				ON commentTable.uid=userDetails.uid
+				where pid='$pid'";
  		$result= $conn->query($sql);
  		return $result;
 	}

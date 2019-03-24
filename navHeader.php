@@ -13,13 +13,13 @@ a{
 
 <nav class="navbar navbar-inverse bg-inverse" role="navigation">
     <div class="navbar-header" id="two">
-        <a class="navbar-brand" href="myPage.php">Photo Sharing Portal</a>
+        <a class="navbar-brand" href="page.php">Photo Sharing Portal</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li class="active" id="three">
-                <a class="nav-link" href="page.php">
-                    <i class="fa fa-home" aria-hidden="true"></i> Home
+                <a class="nav-link" href="myPage.php">
+                    <i class="fa fa-home" aria-hidden="true"></i> My Profile
                 </a>
             </li>
             <li id="four">

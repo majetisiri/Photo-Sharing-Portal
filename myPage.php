@@ -29,7 +29,7 @@ echo '
   <div class="row">
     <div class="col-md-2 col-md-offset-1">
     <h3>'.ucwords($row['first_name']).' '.ucwords($row['last_name']).'</h3>
-    <img class="img-circle" src="'.$row['profile_pic'].'" width="200px" height="200px">
+    <img class="img-circle" src="profile_pics/'.$row['profile_pic'].'" width="200px" height="200px">
     <br><br><br><i>
     <p><i class="fa fa-phone" aria-hidden="true"></i> '.$row['phone'].'</p>
     <p><i class="fa fa-home" aria-hidden="true"></i> '.$row['address'].'</p>

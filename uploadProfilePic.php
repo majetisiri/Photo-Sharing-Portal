@@ -8,23 +8,21 @@ session_start();
 $uid = $_SESSION['id'];
 
 $postErr = "";
-if(isset($_POST["post_data"]) && isset($_FILES['fileToUpload'])){
-	$file_new_name = fileupload();
-	$post =$_POST["post_data"];
-	if($post!= NULL && $file_new_name!= NULL){
+if(isset($_FILES['profilePicUpload'])){
+	$file_new_name = profilePicUpload();
+	echo $file_new_name;
+	if($file_new_name!= NULL){
 		$uid= $_SESSION['id'];
 		
-		$result= QueryBuilder::insertPost($conn,$post, $file_new_name, $uid);
-	}
-	else{
-		$postErr = "No post";
+		$result= QueryBuilder::insertProfilePic($conn,$file_new_name, $uid);
+		echo $result;
 	}
 	
 }
 
 
 postModal($postErr);
-userDetails($conn,$uid);
+$details=userDetails($conn,$uid);
 
 echo '
 <div class="container" style="padding-top:70px">
@@ -39,20 +37,25 @@ echo '
 		<div class="col-md-6">
 			<div class="row">
 				<div class="col-md-3">
-			 		<img src="https://s-media-cache-ak0.pinimg.com/originals/04/e3/ae/04e3ae50ebcbf5a0473b166e95cb433b.jpg" class="img-circle" alt="Cinque Terre" width="100" height="100">
+			 		<img src="profile_pics/'.$details[6].'" class="img-circle" alt="Prof_pic not found" width="100" height="100">
 			 	</div>
 			 	<div class="col-md-6">
 					<h2>Majeti Srividya</h2>
 				</div>
 			</div>
 			</br>
-			<div class="row" style="padding-left: 40px;padding-bottom:20px;">
-                <img src="https://www.buildzoom.com/blog/wp-content/uploads/gray-icon.gif"><br><br>
-                <button class="btn btn-primary">
-					<i class="fa fa-upload" aria-hidden="true"></i>
-					Upload
-				</button>
-            </div>
+
+			<form action="#" method="post" enctype="multipart/form-data">
+				<div class="row col-md-offset-3">
+					<label>Upload Profile Picture</label><br><br>
+					<img src="./images/upload.png" width="80px" length="80px" style="padding-bottom:10px;"">
+					<input type="file" name="profilePicUpload" id="profilePicUpload"> <br>
+					 <button name="submit" type="submit" class="btn btn-primary"> 
+					 	<i class="fa fa-pencil" aria-hidden="true"></i>
+					 	Upload 
+					 </button>
+				</div>
+			</form>
 		</div>
 	</div>									
 </div>

@@ -52,39 +52,14 @@ $(document).ready(function() {
 	});
 
 
-	var display_comments = function(_this, id) {
-
-		$.post('get_comments.php', {pid: id}, function(response) {
-			$(_this).next().html('');
-			$(_this).next().show();
-
-			$.each(response, function(index, data){
-				$(_this).next().append('<li>'+data+'</li>');		
-			});
-			$(_this).text('Hide comments');
-			$(_this).addClass('hide_comments');
-			$(_this).removeClass('see_comments');
-		},'json');
-	}
-
-	 
-
 	$('.comment').click(function(){
 		$(this).siblings('.comment_box').html('<br/><textarea style="margin-bottom:8px;" name="comment" class="textarea form-control" placeholder="Type here"></textarea>');
 	});
 
-	$(document).on('click', '.see_comments', function(){
-		var id = $(this).siblings('.like').attr('id');
-		var _this = this;
-		display_comments(_this, id);
-	});
-
-	$(document).on('click', '.hide_comments', function(){
-		$(this).next().hide();
-		$(this).text('view comments');
-		$(this).addClass('see_comments');
-		$(this).removeClass('hide_comments');
-	});
+	// $('.see_comments').click(function(){
+	// 	var that= 
+	// 	$(this).siblings('.comment_box').html('<br/><textarea style="margin-bottom:8px;" name="comment" class="textarea form-control" placeholder="Type here"></textarea>');
+	// });
 
 	$('.delete_post').click(function(){
 		var id = $(this).attr('id');

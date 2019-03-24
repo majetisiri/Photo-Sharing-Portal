@@ -39,7 +39,7 @@ echo '
 		<div class="col-md-6">
 			<div class="row">
 				<div class="col-md-3">
-			 		<img src="https://s-media-cache-ak0.pinimg.com/originals/04/e3/ae/04e3ae50ebcbf5a0473b166e95cb433b.jpg" class="img-circle" alt="Cinque Terre" width="100" height="100">
+			 		<img src="profile_pics/'.$details[6].'" class="img-circle" alt="Cinque Terre" width="100" height="100">
 			 	</div>
 			 	<div class="col-md-6">
 					<h2>Majeti Srividya</h2>

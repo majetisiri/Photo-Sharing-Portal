@@ -31,14 +31,13 @@ echo '
      <div>
      	<h3><i class="fa fa-arrow-right" aria-hidden="true"></i> Step 1: Upload a profile picture and fill details.</h3>
      	<span class="help-block">Click on photo sharing portal in the navigation bar</span>
-        <img src="http://www.hbc333.com/data/out/190/47199326-profile-pictures.png" alt="upload"/>
      </div>
-     <hr class="style16">
+     <br><hr class="style16"><br>
      <div>
      	<h3><i class="fa fa-arrow-right" aria-hidden="true"></i> Step 2: Add friends you know who are already in PSP.</h3>
      	<span class="help-block">Click on find friends in the navigation bar</span>
      </div>
-     <hr class="style16">
+     <br><hr class="style16"><br>
      <div>
      	<h3><i class="fa fa-arrow-right" aria-hidden="true"></i> Step 3: Upload picture, add description and POST!!</h3>
      	<span class="help-block">Click on post in the navigation bar</span>
@@ -47,13 +46,13 @@ echo '
   </div>
   <div class="col-md-6">
      <div>
-     	<img src="https://img.clipartfest.com/866b05e489cf9ba04221074335737785_camera20clipart20black20and-black-camera-clipart_440-445.jpeg" alt="camera" class="col-md-offset-2" width="250px" height="250px">
+     	<img src="./images/camera.png" alt="camera" class="col-md-offset-2" width="250px" height="250px">
      </div>
      <div>
-     	<img src="https://img.clipartfest.com/9a50045c143e3768d51d6c01cab5bee0_color-black-white-say-cheese-for-a-photo-black-and-white-clipart_1500-961.jpeg" alt="say cheese"  class="col-md-offset-10" width="250px" height="250px"/>
+     	<img src="./images/sayCheese.png" alt="say cheese"  class="col-md-offset-10" width="250px" height="250px"/>
      </div>
      <div>
-     	<img src="http://img.clipartall.com/face-transparent-background-smile-clipart-1024_1024.jpg" alt="upload" class="col-md-offset-2" width="250px" height="250px"/>
+     	<img src="./images/smile.png" alt="upload" class="col-md-offset-2" width="250px" height="250px"/>
      </div>
   </div>
 </div>
