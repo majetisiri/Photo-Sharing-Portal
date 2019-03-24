@@ -35,7 +35,7 @@ Application Screenshots:
 The app allows users to:
 - Send add requests to existing users and navigate into photo collections and photo details once they accept your friend request.
 - Upload photos in the website.
-- Like, comment on your friends post.
+- Like, comment on your friend's post.
 - Edit your post if you need any changes in the image description.
 - Delete your posted images.
 - In the settings section --> you can update your personal information, profile picture or your password.
