@@ -19,16 +19,16 @@ The goal of this app is to provide a complete, end-to-end example of a real-worl
 
 Application Screenshots:
 
-- Login Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- Registration Page [Desktop](Images/PhotoStream-Desktop.jpg) [Mobile](Images/PhotoStream-Mobile.jpg)
-- New User Welcome Page [Desktop](Images/PhotoDetailsPage-Desktop.jpg) [Mobile](Images/PhotoDetailsPage-Mobile.jpg)
-- Find Friends Page [Desktop](Images/ProfilePage-Desktop.jpg) [Mobile](Images/ProfilePage-Mobile.jpg)
-- Friend Requests Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- My Profile Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- Home Page  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg) 
-- Settings / Edit Profile  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- Settings / Update Password  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- Settings / Upload Profile Pic  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- Login Page [Desktop](Uploads/2.jpg)
+- Registration Page [Desktop](Uploads/1.jpg)
+- New User Welcome Page [Desktop](Uploads/1.jpg)
+- Find Friends Page [Desktop](Uploads/1.jpg)
+- Friend Requests Page [Desktop](Uploads/1.jpg)
+- My Profile Page [Desktop](Uploads/1.jpg)
+- Home Page  [Desktop](Uploads/1.jpg)
+- Settings / Edit Profile  [Desktop](Uploads/1.jpg)
+- Settings / Update Password  [Desktop](Uploads/1.jpg)
+- Settings / Upload Profile Pic  [Desktop](Uploads/1.jpg)
 
 ## Website features
 
