@@ -19,8 +19,8 @@ The goal of this app is to provide a complete, end-to-end example of a real-worl
 
 Application Screenshots:
 
-- Login Page [Desktop](images/1_50.jpg)
-- Registration Page [Desktop](images/2_50.jpg)
+- Login Page [Desktop](images/2_50.jpg)
+- Registration Page [Desktop](images/1_50.jpg)
 - New User Welcome Page [Desktop](images/3_50.jpg)
 - Find Friends Page [Desktop](images/4_50.jpg)
 - Friend Requests Page [Desktop](images/10_50.jpg)
