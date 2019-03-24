@@ -19,10 +19,16 @@ The goal of this app is to provide a complete, end-to-end example of a real-worl
 
 Application Screenshots:
 
-- Categories Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
-- Photo Stream [Desktop](Images/PhotoStream-Desktop.jpg) [Mobile](Images/PhotoStream-Mobile.jpg)
-- Photo Details Page [Desktop](Images/PhotoDetailsPage-Desktop.jpg) [Mobile](Images/PhotoDetailsPage-Mobile.jpg)
-- Profile Page [Desktop](Images/ProfilePage-Desktop.jpg) [Mobile](Images/ProfilePage-Mobile.jpg)
+- Login Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- Registration Page [Desktop](Images/PhotoStream-Desktop.jpg) [Mobile](Images/PhotoStream-Mobile.jpg)
+- New User Welcome Page [Desktop](Images/PhotoDetailsPage-Desktop.jpg) [Mobile](Images/PhotoDetailsPage-Mobile.jpg)
+- Find Friends Page [Desktop](Images/ProfilePage-Desktop.jpg) [Mobile](Images/ProfilePage-Mobile.jpg)
+- Friend Requests Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- My Profile Page [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- Home Page  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg) 
+- Settings / Edit Profile  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- Settings / Update Password  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
+- Settings / Upload Profile Pic  [Desktop](Images/Category-Overview-Desktop.jpg) [Mobile](Images/Category-Overview-Mobile.jpg)
 
 ## Website features
 
