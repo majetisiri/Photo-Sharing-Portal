@@ -47,7 +47,7 @@ if (isset($_POST['login'])) {
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('http://belindashi.com/wp-content/uploads/2013/12/G+-Collage-21_2x11_9-15.jpg');
+	    background-image: url('https://photo-sharing-portal.s3.us-east-2.amazonaws.com/06d4c2c8-671d-4859-acf0-b3f5145b1167.jpg');
 	    background-repeat: no-repeat;
 	    background-attachment: fixed;
 	    background-size: 100%;
